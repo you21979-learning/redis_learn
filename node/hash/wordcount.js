@@ -54,6 +54,6 @@ lists.forEach(function(o){
 cl.hgetall(key, function(err, val){
     console.log(val);
 });
-
+cl.quit();
 
 
