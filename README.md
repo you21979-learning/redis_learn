@@ -12,6 +12,10 @@ redis_learn
 
     `flushall`
 
+* 全部削除(選択しているデータベースだけ)
+
+    `flushdb`
+
 * パターンでキーを削除
 
     `redis-cli KEYS "prefix*" | xargs redis-cli DEL`
