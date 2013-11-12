@@ -18,7 +18,7 @@ redis_learn
 
 * パターンでキーを削除
 
-    `redis-cli KEYS "prefix*" | xargs redis-cli DEL`
+    `$ redis-cli KEYS "prefix*" | xargs redis-cli DEL`
 
 
 
