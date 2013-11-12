@@ -4,14 +4,27 @@ redis_learn
 
 
 * データベース切り替え
-    select 0
 
+    `select 0`
+
+* キーの一覧
+
+    `keys *`
 
 * 全部削除(データベースすべて)
-    flushall
+
+    `flushall`
+
+* 全部削除(選択しているデータベースだけ)
+
+    `flushdb`
+
+応用
+----
 
 * パターンでキーを削除
-    redis-cli KEYS "prefix*" | xargs redis-cli DEL
+
+    `$ redis-cli KEYS "prefix*" | xargs redis-cli DEL`
 
 
 
